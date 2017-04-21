@@ -12,11 +12,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Welcome to charting with Bokeh!'
+    return 'Welcome to charting with Bokeh! This data is from someones greenhouse in PyData class!'
 
 @app.route('/chart')
 def chart():
-    p = figure(plot_width=1000, plot_height=600,
+    p = figure(plot_width=1000, plot_height=800,
     x_axis_type="datetime")
     #add a line renderer
     x = []
